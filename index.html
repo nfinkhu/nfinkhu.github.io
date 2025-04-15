@@ -1,7 +1,34 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <!-- Load jQuery, just for dynamically loading the header. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Load local styles and scripts. -->
+    <link href="css/index.css" type="text/css" rel="stylesheet"/>
+    <script src="header.js"></script>
+
+    <!-- Load MathJax. -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Load favicon, title, and other images. -->
+    <link href="./assets/img/favicon.ico" rel="icon" type="img"/>
+    <link rel="preload" as="image" href="./assets/img/twitter.png">
+    <link rel="preload" as="image" href="./assets/img/linkedin.png">
+    <title>Home</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div id="wrapper">
+        <!-- Include the header. -->
+        <div id="hparent"></div>
+
+        <!-- content unique to this page. -->
+        <div id="content">
+            <div id="intro" class="column animate">
+                Talk about yourself.
+            </div>
+        </div>
+    </div>
 </body>
 </html>
